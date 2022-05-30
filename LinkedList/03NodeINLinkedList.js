@@ -17,14 +17,16 @@ class LinkedList {
     
       //Insert Function for insert node
       insertFirst(data){
-          this.head = new Node (data , this.head)
+          this.head = new Node(data , this.head)
       }
 }
             // use insertfirst function
     let ll = new LinkedList();
 
         ll.insertFirst(100);
-    
+        ll.insertFirst(200);
+
+        qaw
         console.log(ll);
 
 
