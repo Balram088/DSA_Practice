@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    function palindrom(n)
+{
+    let r=0;
+    let num=n;
+    let s=0;
+    while(n!=0){
+        r=n%10;
+        s=s*10+r;
+        n=Math.floor(n/10);
+        
+    }
+    
+   if(s==num)
+   {
+    console.log("Yes");
+      document.write(" \n Yes  " +num+"  is palindrom");
+   }
+   else{
+    console.log("No");
+    document.write(" No  "+num+"  is Not palindrom");
+   }
+   }
+   function paliOtherWay(n){
+    let l=n.length;
+    for(let i=0;i<l/2;i++){
+        if(n[i] == n[l-1-i]){
+            console.log("Yes");
+             zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+           
+        }
+        else{
+            console.log(" No");
+            
+        }
+
+    }
+   }
+    // palindrom(1061);
+    paliOtherWay("21012");
+    
+</script>
