@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Transepose matrix</h1>
+    <p>1 2 3 4</p>
+    <p>5 6 7 8</p>
+    <p>9 0 1 2</p>
+    <h1>Out Put will be</h1>
+    <p>1,5,9 </p>
+    <p>2,6,0 </p>
+    <p>3,7,1 </p>
+    <p>4,8,2</p>
+</body>
+
+</html>
+<script>
+    let [N,M]=[3,4];
+    let matrix=[[1,2,3,4],[5,6,7,8],[9,0,1,2]];
+    
+    function transposeTheMatrix(N, M, matrix){
+    //write code here
+    for(let i=0;i<M;i++){
+        let bag="";
+        for(let j=0;j<N;j++){
+            bag+=matrix[j][i]+" ";
+           
+        }
+        document.write(bag);
+    }
+    
+  
+}
+transposeTheMatrix(N, M, matrix)
+</script>
