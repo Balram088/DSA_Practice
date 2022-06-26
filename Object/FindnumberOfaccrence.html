@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>"Paratha", "Paratha", "Masala Dosa", "Noodles", "Noodles", "Spring Rolls","Paratha","Paratha"</p>
+</body>
+</html>
+<script>
+    let arr =["Paratha", "Paratha", "Masala Dosa", "Noodles", "Noodles", "Spring Rolls","Paratha","Paratha"];
+let obj={};
+for(let i=0;i<arr.length;i++){
+     let name=arr[i];
+  if(obj[name]==undefined){
+    obj[name]=1;
+  }
+  else{
+    obj[name]=obj[name]+1;
+  }
+}
+for(key in obj){
+  document.write(key+"  --  "+obj[key]);
+}
+// console.log(obj);
+</script>
