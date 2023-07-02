@@ -11,6 +11,26 @@
 </body>
 </html>
 <script>
+    function PP(n){
+        let num=n;
+        let r=0;
+        let sum=0;
+
+        while(n!=0){
+            r=n%10;
+            sum=sum*10+r;
+            n=Math.floor(n/10);
+        }
+        if(num==sum){
+            console.log("pali")
+        }
+        else{
+            console.log("Not ")
+        }
+       
+    }
+
+    //===============================
     function palindrom(n)
 {
     let r=0;
@@ -29,17 +49,16 @@
       document.write(" \n Yes  " +num+"  is palindrom");
    }
    else{
-    console.log("No");
+     console.log("No");
     document.write(" No  "+num+"  is Not palindrom");
    }
    }
+   //===============================
    function paliOtherWay(n){
     let l=n.length;
     for(let i=0;i<l/2;i++){
         if(n[i] == n[l-1-i]){
             console.log("Yes");
-             zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-           
         }
         else{
             console.log(" No");
@@ -48,7 +67,9 @@
 
     }
    }
-    // palindrom(1061);
-    paliOtherWay("21012");
+    // palindrom(101);
+    // paliOtherWay("ABBA");
+      PP(435341);
     
-</script>
+</script> 
+
